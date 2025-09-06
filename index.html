@@ -7,22 +7,65 @@
     <title>Belajar Tailwind</title>
   </head>
   <body>
-    <header class="bg-[url('/public/assets/cover.png')] h-full w-full">
-      <nav class="bg-transparent text-white flex px-30 py-20 font-mono">
-        <div class="flex items-center gap-2">
-          <img src="./public/assets/Logo.png" alt="" />
-          <h3 class="text-black font-bold font-sans">Lidia</h3>
-        </div>
-        <ul class="flex gap-15 mt-2 text-gray-400 font-light ml-65 mr-210">
-          <a href="" class="hover:text-purple-950">Feature</a>
-          <a href="" class="hover:text-purple-950">Service</a>
-          <a href="" class="hover:text-purple-950">Review</a>
-          <a href="" class="hover:text-purple-950">Location</a>
-        </ul>
-        <button class="bg-white w-30 rounded-xl p-2 shadow text-purple-950">
-          Login
+    <!-- nav start -->
+    <nav class="bg-transparent text-white flex px-30 py-20 font-mono">
+      <div class="flex items-center gap-2">
+        <img src="./public/assets/Logo.png" alt="" class="w-10" />
+        <h3 class="text-black font-bold font-sans text-xl">Lidia</h3>
+      </div>
+      <ul class="flex gap-15 mt-2 text-gray-400 font-light ml-65 mr-190">
+        <a href="" class="hover:text-purple-950">Feature</a>
+        <a href="" class="hover:text-purple-950">Service</a>
+        <a href="" class="hover:text-purple-950">Review</a>
+        <a href="" class="hover:text-purple-950">Location</a>
+      </ul>
+      <button class="bg-white w-30 rounded-xl p-2 shadow text-purple-950">
+        Login
+      </button>
+    </nav>
+    <!-- nav end -->
+
+    <!-- hero start -->
+    <header class="flex gap-60 px-30 py-10">
+      <div>
+        <h1 class="text-7xl font-mono font-bold max-w-150">
+          Search & review your
+          <span class="text-blue-600">fav book</span> effortlessly
+        </h1>
+        <p class="max-w-130 text-xl font-light mt-12">
+          Embark on a literary journey like never before with our revolutionary
+          library application! Introducing a seamless experience that transcends
+          traditional boundaries, where you can effortlessly search your
+          favorite books.✨
+        </p>
+
+        <button class="bg-primary rounded-xl w-45 h-15 mt-12 text-white">
+          Start now →
         </button>
-      </nav>
+      </div>
+      <div class="flex">
+        <img
+          src="public/assets/Dompet Ayah Sepatu Ibu.png"
+          alt=""
+          class="h-3/5 w-3/5 mt-50"
+        />
+        <img
+          src="public/assets/Talking to Strangers.png"
+          alt=""
+          class="h-3/5 w-3/5 -mt-10 -ml-10"
+        />
+        <img
+          src="public/assets/The Visual MBA.png"
+          alt=""
+          class="h-3/5 w-3/5 mt-65 -ml-30"
+        />
+        <img
+          src="public/assets/The Midnight Library.png"
+          alt=""
+          class="h-3/5 w-3/5 -ml-10 mt-20"
+        />
+      </div>
     </header>
+    <!-- hero end -->
   </body>
 </html>
