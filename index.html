@@ -1,12 +1,13 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="icon" href="/public/assets/Logo.png" />
     <title>Belajar Tailwind</title>
   </head>
-  <body>
+  <body class="">
     <!-- nav start -->
     <nav class="bg-transparent text-white flex px-30 py-20 font-mono">
       <div class="flex items-center gap-2">
@@ -14,10 +15,10 @@
         <h3 class="text-black font-bold font-sans text-xl">Lidia</h3>
       </div>
       <ul class="flex gap-15 mt-2 text-gray-400 font-light ml-65 mr-190">
-        <a href="" class="hover:text-purple-950">Feature</a>
-        <a href="" class="hover:text-purple-950">Service</a>
-        <a href="" class="hover:text-purple-950">Review</a>
-        <a href="" class="hover:text-purple-950">Location</a>
+        <a href="#features" class="hover:text-purple-950">Feature</a>
+        <a href="#services" class="hover:text-purple-950">Service</a>
+        <a href="#review" class="hover:text-purple-950">Review</a>
+        <a href="#location" class="hover:text-purple-950">Location</a>
       </ul>
       <button class="bg-white w-30 rounded-xl p-2 shadow text-purple-950">
         Login
@@ -26,23 +27,25 @@
     <!-- nav end -->
 
     <!-- hero start -->
-    <header class="flex gap-60 px-30 py-10">
-      <div>
-        <h1 class="text-7xl font-mono font-bold max-w-150">
+    <section class="flex gap-60 px-30 py-10">
+      <header>
+        <h1 class="max-w-150">
           Search & review your
           <span class="text-blue-600">fav book</span> effortlessly
         </h1>
-        <p class="max-w-130 text-xl font-light mt-12">
+        <p class="max-w-130 text-xl font-light font-jakarta mt-12 text-desc">
           Embark on a literary journey like never before with our revolutionary
           library application! Introducing a seamless experience that transcends
           traditional boundaries, where you can effortlessly search your
           favorite books.✨
         </p>
 
-        <button class="bg-primary rounded-xl w-45 h-15 mt-12 text-white">
+        <button
+          class="bg-primary rounded-xl w-45 h-15 mt-12 shadow-sm text-white"
+        >
           Start now →
         </button>
-      </div>
+      </header>
       <div class="flex">
         <img
           src="public/assets/Dompet Ayah Sepatu Ibu.png"
@@ -65,7 +68,199 @@
           class="h-3/5 w-3/5 -ml-10 mt-20"
         />
       </div>
-    </header>
+    </section>
     <!-- hero end -->
+
+    <!-- features start -->
+    <section class="px-30 mt-50" id="features">
+      <div class="flex flex-col gap-3 justify-center">
+        <h6 class="text-primary">FEATURES</h6>
+        <h2>🤔• What You Can Do?</h2>
+      </div>
+
+      <div class="flex justify-around mt-20">
+        <div class="flex flex-col items-center gap-3">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="/public/icons/search.svg"
+              alt=""
+              class="bg-primary p-3 rounded-2xl drop-shadow-xl"
+            />
+            <h5>Search Book</h5>
+          </div>
+          <p class="max-w-60 text-center">
+            Effortlessly find your next read with our powerful and intuitive
+            book search.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="/public/icons/review.svg"
+              alt=""
+              class="bg-primary p-3 rounded-2xl drop-shadow-xl"
+            />
+            <h5>Review book</h5>
+          </div>
+          <p class="max-w-60 text-center">
+            Discover insightful critiques and share your thoughts on diverse
+            literary masterpieces effortlessly.
+          </p>
+        </div>
+
+        <div class="flex flex-col items-center gap-3">
+          <div class="flex flex-col items-center gap-2">
+            <img
+              src="/public/icons/whish.svg"
+              alt=""
+              class="bg-primary p-3 rounded-2xl drop-shadow-xl"
+            />
+            <h5>Wishlist book</h5>
+          </div>
+          <p class="max-w-60 text-center">
+            Curate your literary dreams–wishlist books for future adventures and
+            discoveries.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- features end -->
+
+    <!-- services start -->
+    <section class="px-30 mt-50" id="services">
+      <div class="flex flex-col gap-3 justify-center">
+        <h6 class="text-primary">SERVICES</h6>
+        <h2>🚀• The Services for You</h2>
+      </div>
+
+      <div class="mt-10 flex justify-start gap-20">
+        <img src="/public/assets/Service.png" alt="" />
+        <div class="max-w-100 mt-6">
+          <h4 class="font-jakarta">
+            <span class="text-primary">Rent</span> your favorite book fairly
+            easy on <span class="text-primary">Lidia</span>!
+          </h4>
+          <div class="flex flex-col gap-2 mt-5 text-[16px]">
+            <p>
+              Viewing, rent, and organize your favorite books has never been
+              easier. An integrated digital library rent that’s simple to use,
+              Lidia lets you spend less time managing your work and more time
+              actually doing it!
+            </p>
+
+            <p>
+              Effortless rentals, personalized shelves—Lidia transforms book
+              management, enhancing your reading experience~
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-row-reverse justify-start gap-20">
+        <img src="/public/assets/Reading.png" alt="" />
+        <div class="max-w-100 mt-6">
+          <h4 class="font-jakarta">
+            Quick Book Rentals: <span class="text-primary">Dive </span> into
+            <span class="text-primary">Reading</span> Instantly
+          </h4>
+          <div class="flex flex-col gap-2 mt-5 text-[16px]">
+            <p>
+              Discover instant literary delight. Access a vast library, borrow
+              your favorite reads, and dive into captivating stories within
+              minutes. Reading made quick and easy, just a click away!
+            </p>
+
+            <p>
+              Unlock a world of stories effortlessly. Browse genres, choose,
+              rent in minutes. Seamlessly manage your reading adventures with
+              our intuitive platform~
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services end -->
+
+    <!-- rev start -->
+    <section class="px-30 mt-50" id="review">
+      <div class="flex flex-col gap-3 justify-center">
+        <h6 class="text-primary">REVIEWS</h6>
+        <h2>💬• Reviews of Others</h2>
+      </div>
+
+      <div class="flex justify-center flex-row gap-20 mt-20">
+        <div
+          class="p-5 flex flex-col items-center gap-5 shadow-2xl max-w-70 w-100 h-auto text-center"
+        >
+          <img src="/public/assets/Profile1.png" alt="" />
+          <p>
+            Engaging plot, vivid characters; a captivating read that lingers in
+            your thoughts.
+          </p>
+          <p class="text-primary">Ahmad Saugi</p>
+          <p>College Student</p>
+        </div>
+        <div
+          class="p-5 flex flex-col items-center gap-5 shadow-2xl max-w-70 w-100 h-auto text-center"
+        >
+          <img src="/public/assets/Profile2.png" alt="" />
+          <p>
+            Thought-provoking narrative and rich prose. A must-read for any avid
+            book lover!
+          </p>
+          <p class="text-primary">Muhammad Alfian</p>
+          <p>School Student</p>
+        </div>
+        <div
+          class="p-5 flex flex-col items-center gap-5 shadow-2xl max-w-70 w-100 h-auto text-center"
+        >
+          <img src="/public/assets/Profile3.png" alt="" />
+          <p>
+            Immersive storytelling! An enriching literary experience worth
+            savoring and sharing.
+          </p>
+          <p class="text-primary">Wahyu Amirulloh</p>
+          <p>ERP Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- rev end -->
+
+    <!-- loc start -->
+    <section class="px-30 mt-50" id="location">
+      <div class="flex flex-col gap-3 justify-center">
+        <h6 class="text-primary">LOCATION</h6>
+        <h2>🗺• Our Library Location</h2>
+      </div>
+      <img src="public/assets/Location.png" alt="" class="mx-auto mt-20" />
+    </section>
+    <!-- loc end -->
+
+    <footer class="mt-20">
+      <div class="flex justify-center text-center gap-30">
+        <div>
+          <h6>Managed By</h6>
+          <img src="public/assets/Logotext.png" alt="" />
+        </div>
+        <div>
+          <h6>Social Media</h6>
+          <div class="flex gap-5 mt-7">
+            <img src="public/icons/Twitter.svg" alt="" />
+            <img src="public/icons/Instagram.svg" alt="" />
+            <img src="public/icons/Facebook.svg" alt="" />
+          </div>
+        </div>
+        <div>
+          <h6>Slogan</h6>
+          <p class="text-black mt-9 text-lg">#RentFavBooks</p>
+        </div>
+      </div>
+
+      <div class="bg-primary mt-20 py-10">
+        <p class="text-white text-center">© 2024 Lidia. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

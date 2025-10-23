@@ -1,9 +1,54 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Jakarta";
+  src: url("../public/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jakarta-Bold";
+  src: url("../public/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Jakarta-Exb";
+  src: url("../public/fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+}
+
 @theme {
   --color-primary: #4475f2;
   --color-linkactive: #4737ff;
   --color-linkunactive: #9a9ea6;
   --color-heading: #181e4b;
   --color-desc: #5e6282;
+  --font-jakarta: "Jakarta";
+  --font-jakarta-bold: "Jakarta-Bold";
+  --font-jakarta-extra: "Jakarta-Exb";
+}
+
+@layer base {
+  h1 {
+    @apply text-7xl font-jakarta-extra text-heading;
+  }
+
+  h2 {
+    @apply text-5xl font-jakarta-extra text-heading;
+  }
+  h3 {
+    @apply text-4xl font-jakarta-extra text-heading;
+  }
+  h4 {
+    @apply text-3xl font-jakarta-extra text-heading;
+  }
+  h5 {
+    @apply text-2xl font-jakarta-bold text-heading;
+  }
+  h6 {
+    @apply text-xl font-jakarta-bold text-heading;
+  }
+
+  p {
+    @apply font-jakarta text-desc;
+  }
 }
